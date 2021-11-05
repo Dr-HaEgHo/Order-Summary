@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* the background size and color */
+.background {
+  height: 100vh;
+  width: 100%;
+  /* background:( #e0e8ff, url(/images/pattern-background-desktop.svg)); */
+  background: #e0e8ff;
+}
+
+/*to position the pattern*/
+.background img {
+  position: absolute;
+  top: -120px;
+}
+
+/* the card on which all the details go */
+.card {
+  height: 80%;
+  width: 25%;
+  background: #fff;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  box-shadow: 0px 20px 30px rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card h2 {
+  /* width: 80%; */
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #222a3e;
+  font-weight: bold;
+}
+
+.card p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #9699a4;
+  margin-top: 12px;
+}
+
+.card a {
+  color: #3929e1;
+  font-weight: 600;
+  text-decoration: none;
+
+  margin: auto;
+}
+
+/* section of the picture  */
+.hero {
+  width: 100%;
+  height: 38%;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  right: 50%;
+  transform: translateX(50%);
+  align-items: center;
+}
+
+.hero h2 {
+  color: #222a3e;
+}
+
+/* section to choose plan and select pricing */
+.plan {
+  background: #f8f9fe;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.plan img {
+  position: relative;
+  top: 0px;
+  margin-right: 0px;
+  width: 35px;
+  height: auto;
+  padding: 18px;
+}
+
+.plan a {
+  flex: 1;
+  justify-content: flex-end;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 40px;
+  color: #3929e1;
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
+/* when you hover over the "change plan" hyperlink */
+.plan a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.price p {
+  margin-top: 30px;
+  margin: 0px;
+  font-size: 13px;
+  color: #9699a4;
+}
+
+/* button to proceed to payment */
+.btn {
+  width: 80%;
+  background: #3929e1;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* when you hover over the button  */
+
+.btn:hover {
+  background-color: #766cf1;
+}
+
+.btn a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* button to cancel order  */
+.cancel-order {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cancel-order a {
+  color: #4d4e55;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* when you hover over the "cancel order" hyperlink */
+.cancel-order a:hover {
+  color: #030d1d;
+}
