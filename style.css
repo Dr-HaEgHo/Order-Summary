@@ -12,24 +12,28 @@ body {
   height: 100vh;
   width: 100%;
   /* background:( #e0e8ff, url(/images/pattern-background-desktop.svg)); */
-  background: #e0e8ff;
+  background: #edf1ff;
 }
 
 /*to position the pattern*/
-.background img {
+.desktop {
   position: absolute;
   top: -120px;
 }
 
+.mobile{
+  display: none;
+}
+
 /* the card on which all the details go */
 .card {
-  height: 80%;
-  width: 25%;
+  height: 80vh;
+  width: 320px;
   background: #fff;
-  position: relative;
-  margin: auto;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 15px;
   box-shadow: 0px 20px 30px rgb(0, 0, 0, 0.1);
   overflow: hidden;
@@ -173,7 +177,7 @@ body {
 }
 
 .cancel-order a {
-  color: #4d4e55;
+  color: #6f6f6f;
   font-weight: bold;
   text-decoration: none;
   font-size: 10px;
@@ -183,4 +187,33 @@ body {
 /* when you hover over the "cancel order" hyperlink */
 .cancel-order a:hover {
   color: #030d1d;
+}
+
+
+/* for the attribution class */
+.attribution{
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution p{
+  font-size:12px;
+}
+
+/* responsive view for mobile devices */
+@media(max-width: 768px){
+
+  .background{
+    background: #e0e8ff;
+    background-repeat: no-repeat;
+  }
+  .desktop{
+    display: none;
+  }
+  .card{
+    height:60vh;
+    width: 250;
+  }
 }
