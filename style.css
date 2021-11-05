@@ -21,7 +21,7 @@ body {
   top: -120px;
 }
 
-.mobile{
+.mobile {
   display: none;
 }
 
@@ -152,7 +152,7 @@ body {
   margin: auto;
   margin-top: 25px;
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
-  transition:.2s ease;
+  transition: 0.2s ease;
 }
 
 /* when you hover over the button  */
@@ -181,7 +181,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   font-size: 10px;
-  transition:.2s ease;
+  transition: 0.2s ease;
 }
 
 /* when you hover over the "cancel order" hyperlink */
@@ -189,31 +189,29 @@ body {
   color: #030d1d;
 }
 
-
 /* for the attribution class */
-.attribution{
-  width: 80%;
+.attribution {
+  width: 100%;
   margin: auto;
   position: absolute;
   bottom: 0;
 }
 
-.attribution p{
-  font-size:12px;
+.attribution p {
+  font-size: 12px;
 }
 
 /* responsive view for mobile devices */
-@media(max-width: 768px){
-
-  .background{
+@media (max-width: 768px) {
+  .background {
     background: #e0e8ff;
     background-repeat: no-repeat;
   }
-  .desktop{
+  .desktop {
     display: none;
   }
-  .card{
-    height:60vh;
+  .card {
+    height: 60vh;
     width: 250;
   }
 }
